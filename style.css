@@ -1,16 +1,21 @@
-/* Seletor Universal */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Seletor de TAG */
 body {
     font-family: 'Verdana', 'Segoe UI', sans-serif;
     color: #2c3e50;
     line-height: 1.6;
     background-color: #f4f9f8;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Trebuchet MS', sans-serif;
+    color: #028090;
 }
 
 h1 {
@@ -109,49 +114,6 @@ footer {
     border-left: 4px solid #05668d;
 }
 
-#inicio {
-    padding: 24px 0;
-}
-
-#sobre {
-    padding: 24px 0;
-}
-
-#agendamento {
-    background-color: #ffffff;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    padding: 24px;
-}
-
-#horario {
-    background-color: #e8f8f5;
-    border-radius: 8px;
-    padding: 24px;
-    margin-top: 24px;
-}
-
-#foto-consulta {
-    background-image: url("consulta.jpeg");
-}
-
-#foto-exames {
-    background-image: url("exames.jpeg");
-}
-
-#foto-checkup {
-    background-image: url("checkup.jpeg");
-}
-
-h1,
-
-h2,
-
-h3 {
-    font-family: 'Trebuchet MS', sans-serif;
-    color: #028090;
-}
-
 .campo-grupo {
     margin-bottom: 16px;
     display: flex;
@@ -190,4 +152,35 @@ h3 {
     border-radius: 4px;
     font-weight: bold;
     cursor: pointer;
+}
+
+#inicio,
+#sobre {
+    padding: 24px 0;
+}
+
+#agendamento {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 24px;
+}
+
+#horario {
+    background-color: #e8f8f5;
+    border-radius: 8px;
+    padding: 24px;
+    margin-top: 24px;
+}
+
+#foto-consulta {
+    background-image: url("consulta.jpeg");
+}
+
+#foto-exames {
+    background-image: url("exames.jpeg");
+}
+
+#foto-checkup {
+    background-image: url("checkup.jpeg");
 }
