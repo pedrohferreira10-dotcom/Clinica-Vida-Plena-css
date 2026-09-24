@@ -4,58 +4,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agendamento - Clinica Vida Plena</title>
+    <title>Agendamento - Clínica Vida Plena</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-        <h1>Clinica Vida Plena</h1>
-        <nav><a href="index.html">Inicio</a>
-            <a href="agendamento.html">agendamento</a>
+        <h1>Clínica Vida Plena</h1>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="agendamento.html">Agendamento</a>
         </nav>
     </header>
 
     <main>
         <h2>Agende sua consulta</h2>
+
+        <div class="aviso">
+            <p>Atendimento de segunda a sexta, das 08h às 18h.</p>
+        </div>
+        <div class="aviso aviso-urgente">
+            <p>Para casos de urgência ou emergência, dirija-se diretamente ao pronto-socorro.</p>
+        </div>
+
         <form action="#" method="post">
-            <label for="nome">Nome Completo</label>
-            <input type="text" name="nome" id="nome">
-            <br>
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email">
-            <br>
-            <label for="telefone">Telefone</label>
-            <input type="tel" name="telefone" id="telefone" required inputmode="numeric" maxlength="15"
-                pattern="(?:\(?[1-9]{2}\)?\s?)?(?:9\d{4}|\d{4})-?\d{4}"
-                title="Digite com DDD. Ex: (17) 98765-4321 ou 17987654321">
-            <br>
-            <label for="data">Data</label>
-            <input type="date" name="data" id="data">
-            <br>
-            <label for="hora">Horario</label>
-            <input type="time" name="hora" id="hora">
-            <br>
-            <label for="especialidades">Especialidades</label>
-            <select name="especialidades" id="especialidades">
-                <option value="">Selecione uma opção</option>
-                <option value="clinico-geral">Clinica Geral</option>
-                <option value="cardiologia">Cardiologia</option>
-                <option value="demartologia">Demartologia</option>
-                <option value="pediatria">Pediatria</option>
-            </select>
-            <br>
-            <label for="mensagem">Mensagem</label>
-            <textarea name="mensagem" id="mensagem" rows="4"></textarea>
-            <br>
-            <button type="submit">Confirmar Agendamento</button>
+            <div class="campo-grupo">
+                <label for="nome">Nome Completo</label>
+                <input type="text" name="nome" id="nome" class="campo-entrada">
+            </div>
+
+            <div class="campo-grupo">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" class="campo-entrada">
+            </div>
+
+            <div class="campo-grupo">
+                <label for="telefone">Telefone</label>
+                <input type="tel" name="telefone" id="telefone" class="campo-entrada" required inputmode="numeric" maxlength="15"
+                    pattern="(?:\(?[1-9]{2}\)?\s?)?(?:9\d{4}|\d{4})-?\d{4}"
+                    title="Digite com DDD. Ex: (17) 98765-4321 ou 17987654321">
+            </div>
+
+            <div class="campo-grupo">
+                <label for="data">Data</label>
+                <input type="date" name="data" id="data" class="campo-entrada">
+            </div>
+
+            <div class="campo-grupo">
+                <label for="hora">Horário</label>
+                <input type="time" name="hora" id="hora" class="campo-entrada">
+            </div>
+
+            <div class="campo-grupo">
+                <label for="especialidades">Especialidades</label>
+                <select name="especialidades" id="especialidades" class="campo-entrada">
+                    <option value="">Selecione uma opção</option>
+                    <option value="clinico-geral">Clínica Geral</option>
+                    <option value="cardiologia">Cardiologia</option>
+                    <option value="dermatologia">Dermatologia</option>
+                    <option value="pediatria">Pediatria</option>
+                </select>
+            </div>
+
+            <div class="campo-grupo">
+                <label for="mensagem">Mensagem</label>
+                <textarea name="mensagem" id="mensagem" rows="4" class="campo-entrada"></textarea>
+            </div>
+
+            <button type="submit" class="btn-confirmar">Confirmar Agendamento</button>
         </form>
     </main>
 
     <footer>
-        <p>
-            Clinica Vida Plena - Todos os direitos reservado.
-        </p>
+        <p>Clínica Vida Plena - Todos os direitos reservados.</p>
     </footer>
 </body>
 
