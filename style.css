@@ -1,8 +1,8 @@
 /* Seletor Universal */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* Seletor de TAG */
@@ -71,7 +71,6 @@ footer {
     padding: 24px 16px;
 }
 
-/* Seletor de Classe */
 .card {
     background-color: #ffffff;
     border: 1px solid #e0e0e0;
@@ -110,7 +109,6 @@ footer {
     border-left: 4px solid #05668d;
 }
 
-/* Seletor de ID */
 #inicio {
     padding: 24px 0;
 }
@@ -145,8 +143,11 @@ footer {
     background-image: url("checkup.jpeg");
 }
 
-/* Seletor Compartilhado */
-h1, h2, h3 {
+h1,
+
+h2,
+
+h3 {
     font-family: 'Trebuchet MS', sans-serif;
     color: #028090;
 }
